@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Uchen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-image: url(../assets/Background-Login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 300px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 5%;
+    box-shadow: 3px 3px 1px 0px #00000060;
+}
+
+input placeholder {
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    color: #000;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 20px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #00000050;
+}
+
+.label-float label {
+    color: #000;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    margin-top: 0px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label {
+    font-size: 15px;
+    margin-top: 0;
+    color: #000;
+}
+
+button {
+    background-color: transparent;
+    border-color: #000;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+p {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+}
+
+a {
+    color: rgb(77, 28, 192);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .4s ease-out;
+}
+
+a:hover {
+    color: rgb(61, 22, 153);
+    text-shadow: 0 0 1em rgba(93, 22, 185, 0.671), 0 0 1em rgba(93, 22, 185, 0.671);
+}
