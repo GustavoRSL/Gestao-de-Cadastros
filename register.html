@@ -6,33 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="GustavoRSL">
     <meta name="description" content="Tela de login">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/style2.css">
-    <title> Login </title>
+    <title> Cadastro </title>
 </head>
 <body>
     <section class="background">
         <div class="container">
             <div class="card">
                 <h1> Cadastro </h1>
+                <div id='msgErro'></div>
+                <div id='msgSucesso'></div>
+                <!-- Nome -->
+                <div class="label-float">
+                    <input type="text" id="nome" required>
+                    <label id="labelNome" for="nome"> Nome </label>
+                </div>
+
                 <!-- Usuario -->
                 <div class="label-float">
-                    <input type="text" id="usuario">
-                    <label> Usuario </label>
+                    <input type="text" id="usuario" required>
+                    <label id="labelUsuario" for="usuario"> Usuario </label>
                 </div>
                 <!-- Senha -->
                 <div class="label-float">
-                    <input type="password" id="senha">
-                    <label> Senha </label>
+                    <input type="password" id="senha" required>
+                    <label id="labelSenha" for="senha"> Senha </label>
+                    <div class="verSenha"> </div>
                 </div>
-
+                <!-- Confimar Senha -->
                 <div class="label-float">
-                    <input type="password" id="senha">
-                    <label> Confirmar senha </label>
+                    <input type="password" id="confirmarSenha" required>
+                    <label id="labelConfirmarSenha" for="confirmarSenha"> Confirmar senha </label>
+                    <div class="verConfirmarSenha"> </div>
                 </div>
 
                 <div class="justify-center">
-                    <button>Cadastrar!</button>
+                    <button onclick='cadastrar()'>Cadastrar!</button>
                 </div>
 
                 <div class="justify-center">
