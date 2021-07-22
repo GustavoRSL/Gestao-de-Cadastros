@@ -14,44 +14,46 @@
 <body>
     <section class="background">
         <div class="container">
-            <div class="card">
-                <h1> Cadastro </h1>
-                <div id='msgErro'></div>
-                <div id='msgSucesso'></div>
-                <!-- Nome -->
-                <div class="label-float">
-                    <input type="text" id="nome" required>
-                    <label id="labelNome" for="nome"> Nome </label>
-                </div>
+            <form autocomplete="off">
+                <div class="card">
+                    <h1> Cadastro </h1>
+                    <div id='msgErro'></div>
+                    <div id='msgSucesso'></div>
+                    <!-- Nome -->
+                    <div class="label-float">
+                        <input type="text" id="nome" required>
+                        <label id="labelNome" for="nome"> Nome </label>
+                    </div>
 
-                <!-- Usuario -->
-                <div class="label-float">
-                    <input type="text" id="usuario" required>
-                    <label id="labelUsuario" for="usuario"> Usuario </label>
-                </div>
-                <!-- Senha -->
-                <div class="label-float">
-                    <input type="password" id="senha" required>
-                    <label id="labelSenha" for="senha"> Senha </label>
-                    <div class="verSenha"> </div>
-                </div>
-                <!-- Confimar Senha -->
-                <div class="label-float">
-                    <input type="password" id="confirmarSenha" required>
-                    <label id="labelConfirmarSenha" for="confirmarSenha"> Confirmar senha </label>
-                    <div class="verConfirmarSenha"> </div>
-                </div>
+                    <!-- Usuario -->
+                    <div class="label-float">
+                        <input type="text" id="usuario" required>
+                        <label id="labelUsuario" for="usuario"> Usuario </label>
+                    </div>
+                    <!-- Senha -->
+                    <div class="label-float">
+                        <input type="password" id="senha" required>
+                        <label id="labelSenha" for="senha"> Senha </label>
+                        <div class="verSenha"> </div>
+                    </div>
+                    <!-- Confimar Senha -->
+                    <div class="label-float">
+                        <input type="password" id="confirmarSenha" required>
+                        <label id="labelConfirmarSenha" for="confirmarSenha"> Confirmar senha </label>
+                        <div class="verConfirmarSenha"> </div>
+                    </div>
 
-                <div class="justify-center">
-                    <button onclick='cadastrar()'>Cadastrar!</button>
-                </div>
+                    <div class="justify-center">
+                        <button onclick='cadastrar()' type="button" >Cadastrar!</button>
+                    </div>
 
-                <div class="justify-center">
-                    <hr>
-                </div>
+                    <div class="justify-center">
+                        <hr>
+                    </div>
 
-                <p> Já tem uma conta? <a href="index.html"> Logar-se </a></p>
-            </div>
+                    <p> Já tem uma conta? <a href="index.html"> Logar-se </a></p>
+                </div>
+            </form>
         </div>
         
     </section>

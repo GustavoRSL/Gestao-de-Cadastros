@@ -17,22 +17,23 @@
     <section class="background">
         <div class="container">
             <div class="card">
-                <form id="form">
+                <form autocomplete="off">
                     <h1> Entrar </h1>
+                    <div id='msgErro'></div>
                     <!-- Usuario -->
                     <div class="label-float">
                         <input type="text" id="usuario" required>
-                        <label for="usuario"> Usuario </label>
+                        <label id="userLabel" for="usuario"> Usuario </label>
                     </div>
                     <!-- Senha -->
                     <div class="label-float">
                         <input type="password" id="senha" required>
-                        <label for="senha"> Senha </label>
+                        <label id="senhaLabel" for="senha"> Senha </label>
                         <div class="verSenha"> </div>
                     </div>
 
                     <div class="justify-center">
-                        <button onclick='logar()'> Entrar!</button>
+                        <button onclick='logar()' type="button" > Entrar!</button>
                     </div>
 
                     <div class="justify-center">
